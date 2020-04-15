@@ -1,0 +1,17 @@
+{
+  "name": "repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.13.2",
+    "@graphql-codegen/fragment-matcher": "1.13.2",
+    "@graphql-codegen/typescript": "1.13.2",
+    "@graphql-codegen/typescript-operations": "1.13.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

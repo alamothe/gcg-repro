@@ -1,0 +1,20 @@
+schema: src/schema.json
+overwrite: true
+generates:
+  src/fragmentTypes.json:
+    plugins:
+      - fragment-matcher
+  src/graphql-types.ts:
+    config:
+      nonOptionalTypename: true
+      scalars:
+        Instant: number
+        Duration: number
+        LD: string
+        URI: string
+        Temporal: string
+        CarProfilePhoto: string
+        CarPlatform: '"turo"|"getaround"|"ryde"|"hyrecar"|"zubie"|"bouncie"|"automatic"|"tesla"|"viper"|"spireon_goldstar"'
+        LoginProvider: '"facebook"|"google"'
+    plugins:
+      - typescript
